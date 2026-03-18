@@ -39,7 +39,7 @@ const Chat = () => {
   },[])
   useEffect(()=>{
     if(currentUser){
-      socket.current = io("http://localhost:5000")
+      socket.current = io("https://zenchat-backend-pk3m.onrender.com")
       socket.current.emit("add-user",currentUser._id)
     }
     //@testing@@@@@@@@@@@@@@@@@@@@
